@@ -67,5 +67,8 @@ export function siteMetadataBase(): Metadata {
     applicationName: "PureText",
     title: { default: "PureText", template: "%s | PureText" },
     formatDetection: { email: false, address: false, telephone: false },
+    verification: {
+      google: "NdLL2m61xfnzABPwz5qAmkk0vhEL4f_5eVvJjZynJ5U",
+    },
   };
 }
