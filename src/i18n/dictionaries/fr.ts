@@ -5,7 +5,7 @@ export const fr: Dictionary = {
   nav: { selectLanguage: "Langue", menuAria: "Menu", menuClose: "Fermer", home: "Accueil", tools: "Outils", analysis: "Analyse", cleanup: "Nettoyer", lines: "Lignes", diff: "Diff" },
   ecosystem: {
     menuLabel: "Écosystème kixt.net", menuShort: "Éco", menuAria: "kixt.net", menuHint: "Sans envoi de texte.", activeHere: "Actif", openSite: "Ouvrir", current: "Ici", currentShort: "Ici", comingSoon: "Bientôt", close: "Fermer",
-    items: { purepdf: { name: "PurePDF", tagline: "pdf.kixt.net" }, pureQr: { name: "PureQR", tagline: "qr.kixt.net" }, pureTable: { name: "PureTable", tagline: "table.kixt.net" }, pureSign: { name: "PureSign", tagline: "sign.kixt.net" }, pureImage: { name: "Pure Image", tagline: "img.kixt.net" }, pureText: { name: "PureText", tagline: "text.kixt.net" } },
+    items: { purepdf: { name: "PurePDF", tagline: "pdf.kixt.net" }, pureQr: { name: "PureQR", tagline: "qr.kixt.net" }, pureTable: { name: "PureTable", tagline: "table.kixt.net" }, pureSign: { name: "PureSign", tagline: "sign.kixt.net" }, pureImage: { name: "Pure Image", tagline: "img.kixt.net" }, pureConvert: { name: "PureConvert", tagline: "convert.kixt.net" }, pureText: { name: "PureText", tagline: "text.kixt.net" } },
   },
   footer: { networkAria: "Pied de page", ecosystemTitle: "Autres outils", ecosystemLead: "Traitement local — sans compte.", kixtHub: "PureTools / kixt.net", rights: "100 % côté client" },
   security: { badge: "100 % local", badgeShort: "Local", title: "Votre texte reste sur l'appareil", body: "PureText n'envoie pas le contenu. Tout sur text.kixt.net dans le navigateur.", points: ["Pas de base de données", "Texte partagé entre outils", "Copie instantanée"] },

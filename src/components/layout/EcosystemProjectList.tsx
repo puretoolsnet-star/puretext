@@ -1,6 +1,15 @@
 "use client";
 
-import { FileSpreadsheet, FileText, ImageIcon, PenLine, QrCode, Type, type LucideIcon } from "lucide-react";
+import {
+  ArrowLeftRight,
+  FileSpreadsheet,
+  FileText,
+  ImageIcon,
+  PenLine,
+  QrCode,
+  Type,
+  type LucideIcon,
+} from "lucide-react";
 import Link from "next/link";
 
 import { useI18n } from "@/i18n/context";
@@ -18,6 +27,7 @@ const PROJECT_ICONS: Record<EcosystemProjectId, LucideIcon> = {
   pureTable: FileSpreadsheet,
   pureSign: PenLine,
   pureImage: ImageIcon,
+  pureConvert: ArrowLeftRight,
   pureText: Type,
 };
 

@@ -9,6 +9,7 @@ export type EcosystemProjectId =
   | "pureTable"
   | "pureSign"
   | "pureImage"
+  | "pureConvert"
   | "pureText";
 
 export type EcosystemProjectStatus = "active" | "comingSoon";
@@ -29,6 +30,7 @@ const pureQrOrigin = origin(process.env.NEXT_PUBLIC_ECOSYSTEM_PUREQR_URL, "https
 const pureTableOrigin = origin(process.env.NEXT_PUBLIC_ECOSYSTEM_PURETABLE_URL, "https://table.kixt.net");
 const pureSignOrigin = origin(process.env.NEXT_PUBLIC_ECOSYSTEM_PURESIGN_URL, "https://sign.kixt.net");
 const pureImageOrigin = origin(process.env.NEXT_PUBLIC_ECOSYSTEM_PUREIMAGE_URL, "https://img.kixt.net");
+const pureConvertOrigin = origin(process.env.NEXT_PUBLIC_ECOSYSTEM_PURECONVERT_URL, "https://convert.kixt.net");
 export const KIXT_HUB_ORIGIN = origin(process.env.NEXT_PUBLIC_KIXT_URL, "https://kixt.net");
 
 export const ECOSYSTEM_PROJECTS: EcosystemProjectMeta[] = [
@@ -37,6 +39,7 @@ export const ECOSYSTEM_PROJECTS: EcosystemProjectMeta[] = [
   { id: "pureTable", status: "active", href: pureTableOrigin, external: true },
   { id: "pureSign", status: "active", href: pureSignOrigin, external: true },
   { id: "pureImage", status: "active", href: pureImageOrigin, external: true },
+  { id: "pureConvert", status: "active", href: pureConvertOrigin, external: true },
   { id: "pureText", status: "active", href: "/" },
 ];
 
