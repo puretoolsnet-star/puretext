@@ -52,13 +52,13 @@ export function buildPageMetadata(page: PageId, lang: Lang): Metadata {
 export function buildCategoryMetadata(categoryId: CategoryId, lang: Lang): Metadata {
   const copy = getCategoryCopy(lang, categoryId);
   const path = categoryPath(categoryId);
-  return baseMeta(`${copy.hubTitle} | PureText`, copy.hubLead, path, lang);
+  return baseMeta(copy.seoTitle, copy.seoDescription, path, lang);
 }
 
 export function buildToolMetadata(routeId: ToolRouteId, lang: Lang): Metadata {
   const copy = getToolCopy(lang, routeId);
   const path = toolPath(routeId);
-  return baseMeta(`${copy.title} | PureText`, copy.seoDescription, path, lang);
+  return baseMeta(copy.seoTitle, copy.seoDescription, path, lang);
 }
 
 export function siteMetadataBase(): Metadata {

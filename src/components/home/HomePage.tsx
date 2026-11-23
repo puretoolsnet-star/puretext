@@ -25,7 +25,7 @@ export function HomePage() {
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6">
         <header className="space-y-3">
           <h1 className="text-3xl font-semibold tracking-tight text-white">{t.home.heroTitle}</h1>
-          <p className="max-w-2xl text-sm leading-relaxed text-slate-400">{t.home.heroSubtitle}</p>
+          <p className="max-w-2xl text-sm leading-relaxed text-slate-400">{t.home.heroIntro}</p>
         </header>
         <section className="mt-8 glass-card rounded-2xl border border-teal-500/20 bg-teal-500/10 p-4 sm:p-5">
           <h2 className="text-sm font-medium text-teal-200">{t.security.title}</h2>

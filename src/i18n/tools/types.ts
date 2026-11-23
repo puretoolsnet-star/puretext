@@ -5,13 +5,18 @@ export type CategoryCopy = {
   nav: string;
   hubTitle: string;
   hubLead: string;
+  seoTitle: string;
+  seoDescription: string;
+  pageIntro: string;
 };
 
 export type ToolCopy = {
   title: string;
   description: string;
   hint: string;
+  seoTitle: string;
   seoDescription: string;
+  pageIntro: string;
 };
 
 export type ToolsLocalePack = {

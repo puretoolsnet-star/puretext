@@ -9,7 +9,13 @@ export const fr: Dictionary = {
   },
   footer: { networkAria: "Pied de page", ecosystemTitle: "Autres outils", ecosystemLead: "Traitement local — sans compte.", kixtHub: "PureTools / kixt.net", rights: "100 % côté client" },
   security: { badge: "100 % local", badgeShort: "Local", title: "Votre texte reste sur l'appareil", body: "PureText n'envoie pas le contenu. Tout sur text.kixt.net dans le navigateur.", points: ["Pas de base de données", "Texte partagé entre outils", "Copie instantanée"] },
-  home: { heroTitle: "PureText — studio clair pour le texte", heroSubtitle: "11 outils en 4 catégories — analyse, nettoyage, lignes, diff.", categoriesHeading: "Catégories", openCategory: "Ouvrir la catégorie" },
+  home: {
+    heroTitle: "PureText — outils texte privés dans le navigateur",
+    heroIntro:
+      "11 outils pour compter, nettoyer, listes et diff sur text.kixt.net — six langues. Votre texte reste sur l’appareil : pas d’envoi ni de stockage serveur. Interface sombre kixt.net, mobile et bureau.",
+    categoriesHeading: "Catégories",
+    openCategory: "Ouvrir la catégorie",
+  },
   workspace: {
     placeholder: "Collez ou saisissez votre texte…", demo: "Texte démo", clear: "Effacer", copy: "Copier", copied: "Copié", apply: "Appliquer à l'éditeur", noData: "Aucune donnée — ajoutez du texte.",
     charsWithSpaces: "Caractères (avec espaces)", charsNoSpaces: "Caractères (sans espaces)", words: "Mots", sentences: "Phrases", paragraphs: "Paragraphes", avgWordLen: "Long. moyenne",     readTime: "Temps de lecture", minutes: "min", seconds: "s", lines: "Lignes",
@@ -120,5 +126,12 @@ export const fr: Dictionary = {
     presets: { off: "Off", tweet: "280", sms: "160", snippet: "500", post: "1 000", long: "2 000" },
   },
   faq: { heading: "FAQ", items: [{ question: "Le texte est-il envoyé ?", answer: "Non — tout est local après chargement." }, { question: "Le texte persiste ?", answer: "Oui, jusqu'au rechargement." }, { question: "De la pub ?", answer: "Emplacements AdSense prêts, pas de bannières au lancement." }] },
-  seo: { home: { title: "PureText — outils texte en ligne", description: "Compteur, nettoyage, diff sur text.kixt.net — 6 langues.", keywords: ["outils texte", "compteur caractères", "kixt.net"] } },
+  seo: {
+    home: {
+      title: "PureText — outils texte sur text.kixt.net",
+      description:
+        "Compteur, nettoyage HTML, tri de lignes, extraction d’e-mails et diff — 100 % navigateur (FR, EN, DE, ES, PL, UK). Gratuit et privé.",
+      keywords: ["outils texte", "compteur caractères", "kixt.net", "text.kixt.net"],
+    },
+  },
 };

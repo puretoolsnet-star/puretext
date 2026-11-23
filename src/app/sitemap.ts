@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 import { LANGS } from "@/i18n/locales";
 import { localizedPath } from "@/lib/i18n/routing";
 import { buildSitemapLanguageAlternates } from "@/lib/seo/structured-data";
-import { INDEXABLE_PATHS } from "@/lib/seo/sitemap-routes";
+import { getSitemapPageMeta, INDEXABLE_PATHS, type IndexablePath } from "@/lib/seo/sitemap-routes";
 import { absoluteCanonicalUrl } from "@/lib/seo/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -11,13 +11,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   for (const path of INDEXABLE_PATHS) {
+    const meta = getSitemapPageMeta(path as IndexablePath);
     for (const lang of LANGS) {
-      const url = absoluteCanonicalUrl(localizedPath(lang, path));
       entries.push({
-        url,
+        url: absoluteCanonicalUrl(localizedPath(lang, path)),
         lastModified,
-        changeFrequency: "weekly",
-        priority: 1,
+        changeFrequency: meta.changeFrequency,
+        priority: meta.priority,
         alternates: { languages: buildSitemapLanguageAlternates(path) },
       });
     }

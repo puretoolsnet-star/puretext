@@ -9,7 +9,13 @@ export const pl: Dictionary = {
   },
   footer: { networkAria: "Stopka", ecosystemTitle: "Inne narzędzia", ecosystemLead: "Lokalnie — bez konta.", kixtHub: "PureTools / kixt.net", rights: "100% po stronie klienta" },
   security: { badge: "100% lokalnie", badgeShort: "Lokalnie", title: "Tekst zostaje na urządzeniu", body: "PureText nie wysyła treści. Wszystko na text.kixt.net w przeglądarce.", points: ["Bez bazy danych", "Tekst przy zmianie narzędzi", "Szybkie kopiowanie"] },
-  home: { heroTitle: "PureText — jasne studio tekstu", heroSubtitle: "11 narzędzi w 4 kategoriach — analiza, czyszczenie, linie, diff.", categoriesHeading: "Kategorie", openCategory: "Otwórz kategorię" },
+  home: {
+    heroTitle: "PureText — prywatne narzędzia tekstowe w przeglądarce",
+    heroIntro:
+      "11 narzędzi do liczenia, czyszczenia, list i diff na text.kixt.net — sześć języków. Tekst zostaje na urządzeniu: bez uploadu i zapisu na serwerze. Ciemny interfejs kixt.net na telefon i desktop.",
+    categoriesHeading: "Kategorie",
+    openCategory: "Otwórz kategorię",
+  },
   workspace: {
     placeholder: "Wklej lub wpisz tekst…", demo: "Tekst demo", clear: "Wyczyść", copy: "Kopiuj", copied: "Skopiowano", apply: "Zastosuj w edytorze", noData: "Brak danych — dodaj tekst.",
     charsWithSpaces: "Znaki (ze spacjami)", charsNoSpaces: "Znaki (bez spacji)", words: "Słowa", sentences: "Zdania", paragraphs: "Akapity", avgWordLen: "Śr. długość słowa",     readTime: "Czas czytania", minutes: "min", seconds: "s", lines: "Linie",
@@ -120,5 +126,12 @@ export const pl: Dictionary = {
     presets: { off: "Wył.", tweet: "280", sms: "160", snippet: "500", post: "1 000", long: "2 000" },
   },
   faq: { heading: "FAQ", items: [{ question: "Czy tekst idzie na serwer?", answer: "Nie — po załadowaniu strony wszystko lokalnie." }, { question: "Czy tekst się zachowuje?", answer: "Tak, do odświeżenia strony." }, { question: "Czy będzie reklama?", answer: "Miejsca pod AdSense są, start bez banerów." }] },
-  seo: { home: { title: "PureText — narzędzia tekstowe online", description: "Licznik znaków, czyszczenie, diff na text.kixt.net — 6 języków.", keywords: ["narzędzia tekstowe", "licznik znaków", "kixt.net"] } },
+  seo: {
+    home: {
+      title: "PureText — narzędzia tekstowe na text.kixt.net",
+      description:
+        "Licznik znaków, czyszczenie HTML, sortowanie linii, ekstrakcja e-mail i diff — w przeglądarce (PL, EN, DE, ES, FR, UK). Za darmo i prywatnie.",
+      keywords: ["narzędzia tekstowe", "licznik znaków", "kixt.net", "text.kixt.net"],
+    },
+  },
 };

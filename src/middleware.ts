@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 
 import { DEFAULT_LANG, LANGS, isLang } from "@/i18n/locales";
 import { localizedPath } from "@/lib/i18n/routing";
+import { isAlwaysAllowedPath, shouldBlockBotRequest } from "@/lib/security/bot-guard";
 import { CATEGORIES } from "@/lib/tools/routes";
 
 const LANG_PREFIX = new RegExp(`^/(${LANGS.join("|")})(/|$)`);
@@ -18,12 +19,13 @@ function needsLangRedirect(pathname: string): boolean {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (
-    pathname.startsWith("/api") ||
-    pathname.startsWith("/_next") ||
-    /\.[a-zA-Z0-9]+$/.test(pathname)
-  ) {
+  if (isAlwaysAllowedPath(pathname)) {
     return NextResponse.next();
+  }
+
+  const userAgent = request.headers.get("user-agent");
+  if (shouldBlockBotRequest(userAgent)) {
+    return new NextResponse(null, { status: 403, statusText: "Forbidden" });
   }
 
   if (pathname === "/ua" || pathname.startsWith("/ua/")) {

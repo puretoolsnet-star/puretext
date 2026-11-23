@@ -55,9 +55,9 @@ export const en: Dictionary = {
     ],
   },
   home: {
-    heroTitle: "PureText — a light studio for everyday writing",
-    heroSubtitle:
-      "Eleven text tools in four categories: analysis, cleaning, line lists, and diff — emerald clarity, zero paywalls.",
+    heroTitle: "PureText — private text tools in your browser",
+    heroIntro:
+      "Eleven focused utilities for counting, cleaning, list work, and diff — all on text.kixt.net in six languages. Your text stays on your device: we do not upload or store what you paste, and the dark kixt.net interface works on phones and desktops alike.",
     categoriesHeading: "Browse categories",
     openCategory: "Open category",
   },
@@ -404,10 +404,10 @@ export const en: Dictionary = {
   },
   seo: {
     home: {
-      title: "PureText — online text tools (client-side)",
+      title: "PureText — browser text tools on text.kixt.net",
       description:
-        "Count characters, clean formatting, sort lines, extract emails, and diff text on text.kixt.net — 6 languages, no uploads.",
-      keywords: ["text tools", "character counter", "text diff", "word frequency", "kixt.net"],
+        "Count characters, clean HTML, sort lines, extract emails, and compare texts — 100% client-side in EN, DE, ES, FR, PL, and UK. Free, private, mobile-friendly.",
+      keywords: ["text tools", "character counter", "text diff", "word frequency", "kixt.net", "text.kixt.net"],
     },
   },
 };

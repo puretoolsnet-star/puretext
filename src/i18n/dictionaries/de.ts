@@ -49,7 +49,8 @@ export const de: Dictionary = {
   },
   home: {
     heroTitle: "PureText — helles Studio für Alltagstexte",
-    heroSubtitle: "11 Tools in 4 Kategorien: Analyse, Reinigung, Zeilen, Diff — smaragdakzent, ohne Paywall.",
+    heroIntro:
+      "Elf Texttools für Zählen, Reinigen, Listen und Diff auf text.kixt.net — in sechs Sprachen. Ihr Text bleibt auf dem Gerät: kein Upload, keine Serverspeicherung. Dunkles kixt.net-Design für Mobil und Desktop.",
     categoriesHeading: "Kategorien",
     openCategory: "Kategorie öffnen",
   },
@@ -212,9 +213,10 @@ export const de: Dictionary = {
   },
   seo: {
     home: {
-      title: "PureText — Texttools online (clientseitig)",
-      description: "Zeichen zählen, säubern, Zeilen sortieren, Diff auf text.kixt.net — 6 Sprachen.",
-      keywords: ["Texttools", "Zeichenzähler", "Text Diff", "kixt.net"],
+      title: "PureText — Browser-Texttools auf text.kixt.net",
+      description:
+        "Zeichen zählen, HTML säubern, Zeilen sortieren, E-Mails extrahieren, Diff — clientseitig in DE, EN, ES, FR, PL, UK. Kostenlos und privat.",
+      keywords: ["Texttools", "Zeichenzähler", "Text Diff", "kixt.net", "text.kixt.net"],
     },
   },
 };

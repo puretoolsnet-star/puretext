@@ -51,8 +51,8 @@ export function ToolShell({
           </div>
           <div className="min-w-0">
             <h1 className="text-2xl font-semibold text-white">{copy.title}</h1>
-            <p className="mt-2 text-sm text-slate-400">{copy.description}</p>
-            <p className="mt-1 text-xs text-teal-300/80">{copy.hint}</p>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-400">{copy.pageIntro}</p>
+            <p className="mt-2 text-xs text-teal-300/80">{copy.hint}</p>
           </div>
         </header>
         <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_160px]">

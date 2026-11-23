@@ -27,7 +27,7 @@ export function CategoryHub({ categoryId }: { categoryId: CategoryId }) {
           <CategoryIconTile icon={getCategoryIcon(categoryId)} />
           <div className="min-w-0">
             <h1 className="text-2xl font-semibold text-white">{copy.hubTitle}</h1>
-            <p className="mt-2 max-w-2xl text-sm text-slate-400">{copy.hubLead}</p>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-400">{copy.pageIntro}</p>
           </div>
         </div>
         <ul className="mt-8 grid gap-3 sm:grid-cols-2">

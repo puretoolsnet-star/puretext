@@ -41,7 +41,7 @@ export type Dictionary = {
   };
   home: {
     heroTitle: string;
-    heroSubtitle: string;
+    heroIntro: string;
     categoriesHeading: string;
     openCategory: string;
   };
