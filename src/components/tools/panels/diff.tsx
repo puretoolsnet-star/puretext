@@ -1,0 +1,1 @@
+export { ComparePanel } from "@/components/tools/panels/compare-diff";
