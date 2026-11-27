@@ -58,7 +58,7 @@ export const en: Dictionary = {
   home: {
     heroTitle: "PureText — private text tools in your browser",
     heroIntro:
-      "Eleven focused utilities for counting, cleaning, list work, and diff — all on text.kixt.net in six languages. Your text stays on your device: we do not upload or store what you paste, and the dark kixt.net interface works on phones and desktops alike.",
+      "Nine focused utilities for counting, cleaning, list work, and diff — all on text.kixt.net in six languages. Your text stays on your device: we do not upload or store what you paste, and the dark kixt.net interface works on phones and desktops alike.",
     categoriesHeading: "Browse categories",
     openCategory: "Open category",
   },
@@ -402,6 +402,11 @@ export const en: Dictionary = {
         answer: "The layout reserves AdSense-ready slots, but no banners are shown at launch.",
       },
     ],
+  },
+  seoPage: {
+    usageHeading: "When to use this tool",
+    benefitsHeading: "Why processing stays local",
+    faqHeading: "Quick answers",
   },
   seo: {
     home: {

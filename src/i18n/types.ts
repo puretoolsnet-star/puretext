@@ -369,6 +369,11 @@ export type Dictionary = {
     heading: string;
     items: { question: string; answer: string }[];
   };
+  seoPage: {
+    usageHeading: string;
+    benefitsHeading: string;
+    faqHeading: string;
+  };
   seo: {
     home: { title: string; description: string; keywords: string[] };
   };

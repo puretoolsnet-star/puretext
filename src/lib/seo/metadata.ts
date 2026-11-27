@@ -46,7 +46,12 @@ function baseMeta(title: string, description: string, path: string, lang: Lang):
 export function buildPageMetadata(page: PageId, lang: Lang): Metadata {
   if (page !== "home") return baseMeta("PureText", "", "/", lang);
   const copy = dictionaries[lang].seo.home;
-  return { ...baseMeta(copy.title, copy.description, "/", lang), keywords: copy.keywords };
+  const meta = baseMeta(copy.title, copy.description, "/", lang);
+  return {
+    ...meta,
+    title: { absolute: copy.title },
+    keywords: copy.keywords,
+  };
 }
 
 export function buildCategoryMetadata(categoryId: CategoryId, lang: Lang): Metadata {

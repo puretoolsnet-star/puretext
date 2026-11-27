@@ -12,7 +12,7 @@ export const fr: Dictionary = {
   home: {
     heroTitle: "PureText — outils texte privés dans le navigateur",
     heroIntro:
-      "11 outils pour compter, nettoyer, listes et diff sur text.kixt.net — six langues. Votre texte reste sur l’appareil : pas d’envoi ni de stockage serveur. Interface sombre kixt.net, mobile et bureau.",
+      "Neuf outils pour compter, nettoyer, listes et diff sur text.kixt.net — six langues. Votre texte reste sur l’appareil : pas d’envoi ni de stockage serveur. Interface sombre kixt.net, mobile et bureau.",
     categoriesHeading: "Catégories",
     openCategory: "Ouvrir la catégorie",
   },
@@ -126,6 +126,11 @@ export const fr: Dictionary = {
     presets: { off: "Off", tweet: "280", sms: "160", snippet: "500", post: "1 000", long: "2 000" },
   },
   faq: { heading: "FAQ", items: [{ question: "Le texte est-il envoyé ?", answer: "Non — tout est local après chargement." }, { question: "Le texte persiste ?", answer: "Oui, jusqu'au rechargement." }, { question: "De la pub ?", answer: "Emplacements AdSense prêts, pas de bannières au lancement." }] },
+  seoPage: {
+    usageHeading: "Quand l’utiliser",
+    benefitsHeading: "Pourquoi tout reste local",
+    faqHeading: "Réponses rapides",
+  },
   seo: {
     home: {
       title: "PureText — outils texte sur text.kixt.net",

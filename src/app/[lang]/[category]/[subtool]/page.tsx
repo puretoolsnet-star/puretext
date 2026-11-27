@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { JsonLd } from "@/components/seo/JsonLd";
 import { ToolRouteClient } from "@/components/tools/ToolRouteClient";
-import { isLang } from "@/i18n/locales";
+import { isLang, type Lang } from "@/i18n/locales";
 import { buildToolMetadata } from "@/lib/seo/metadata";
+import { buildToolJsonLd } from "@/lib/seo/structured-data";
 import { CATEGORIES, TOOLS_BY_CATEGORY, routeFromSegments, type CategoryId } from "@/lib/tools/routes";
 
 type PageProps = { params: Promise<{ lang: string; category: string; subtool: string }> };
@@ -24,8 +26,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function ToolPage({ params }: PageProps) {
-  const { category, subtool } = await params;
+  const { lang: raw, category, subtool } = await params;
   const routeId = routeFromSegments(category, subtool);
   if (!routeId) notFound();
-  return <ToolRouteClient routeId={routeId} categoryId={category as CategoryId} />;
+  const lang: Lang = isLang(raw) ? raw : "en";
+  return (
+    <>
+      <JsonLd data={buildToolJsonLd(lang, routeId, category as CategoryId)} />
+      <ToolRouteClient routeId={routeId} categoryId={category as CategoryId} />
+    </>
+  );
 }

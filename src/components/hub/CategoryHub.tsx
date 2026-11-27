@@ -5,6 +5,7 @@ import { CategoryIconTile, ToolIconTile } from "@/components/icons/CategoryToolI
 import { ChevronRight } from "lucide-react";
 import { getCategoryIcon, getToolIcon } from "@/lib/tools/icons";
 
+import { PageSeoSection } from "@/components/seo/PageSeoSection";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { useI18n } from "@/i18n/context";
@@ -58,6 +59,7 @@ export function CategoryHub({ categoryId }: { categoryId: CategoryId }) {
             );
           })}
         </ul>
+        <PageSeoSection content={copy} />
       </main>
       <SiteFooter />
     </div>

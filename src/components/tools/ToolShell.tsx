@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 
 import { CategoryIconTile } from "@/components/icons/CategoryToolIcons";
 import { CategoryToolTabs } from "@/components/tools/CategoryToolTabs";
+import { PageSeoSection } from "@/components/seo/PageSeoSection";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { useI18n } from "@/i18n/context";
@@ -55,7 +56,7 @@ export function ToolShell({
             <p className="mt-2 text-xs text-teal-300/80">{copy.hint}</p>
           </div>
         </header>
-        <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_160px]">
+        <div className="mt-8 grid min-w-0 gap-6 lg:grid-cols-[minmax(0,1fr)_160px]">
           <main className="glass-card min-w-0 rounded-2xl border border-slate-800 p-4 sm:p-6">{children}</main>
           <aside
             id="puretext-ad-tool-sidebar"
@@ -65,6 +66,7 @@ export function ToolShell({
             aria-hidden
           />
         </div>
+        <PageSeoSection content={copy} />
       </div>
       <SiteFooter />
     </div>

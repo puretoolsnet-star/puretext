@@ -1,6 +1,14 @@
 import type { CategoryId, ToolRouteId } from "@/lib/tools/routes";
 
-export type CategoryCopy = {
+export type SeoFaqItem = { question: string; answer: string };
+
+export type SeoContentBlock = {
+  seoUsage: string;
+  seoBenefits: string;
+  seoFaq: SeoFaqItem[];
+};
+
+export type CategoryBaseCopy = {
   name: string;
   nav: string;
   hubTitle: string;
@@ -10,7 +18,7 @@ export type CategoryCopy = {
   pageIntro: string;
 };
 
-export type ToolCopy = {
+export type ToolBaseCopy = {
   title: string;
   description: string;
   hint: string;
@@ -19,7 +27,11 @@ export type ToolCopy = {
   pageIntro: string;
 };
 
+export type CategoryCopy = CategoryBaseCopy & SeoContentBlock;
+
+export type ToolCopy = ToolBaseCopy & SeoContentBlock;
+
 export type ToolsLocalePack = {
-  categories: Record<CategoryId, CategoryCopy>;
-  tools: Record<ToolRouteId, ToolCopy>;
+  categories: Record<CategoryId, CategoryBaseCopy>;
+  tools: Record<ToolRouteId, ToolBaseCopy>;
 };

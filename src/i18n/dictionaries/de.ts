@@ -51,7 +51,7 @@ export const de: Dictionary = {
   home: {
     heroTitle: "PureText — helles Studio für Alltagstexte",
     heroIntro:
-      "Elf Texttools für Zählen, Reinigen, Listen und Diff auf text.kixt.net — in sechs Sprachen. Ihr Text bleibt auf dem Gerät: kein Upload, keine Serverspeicherung. Dunkles kixt.net-Design für Mobil und Desktop.",
+      "Neun Texttools für Zählen, Reinigen, Listen und Diff auf text.kixt.net — in sechs Sprachen. Ihr Text bleibt auf dem Gerät: kein Upload, keine Serverspeicherung. Dunkles kixt.net-Design für Mobil und Desktop.",
     categoriesHeading: "Kategorien",
     openCategory: "Kategorie öffnen",
   },
@@ -211,6 +211,11 @@ export const de: Dictionary = {
       { question: "Bleibt der Text beim Wechsel?", answer: "Ja, bis Sie die Seite neu laden." },
       { question: "Gibt es Werbung?", answer: "AdSense-Plätze sind vorbereitet, aber start ohne Banner." },
     ],
+  },
+  seoPage: {
+    usageHeading: "Wann Sie dieses Tool nutzen",
+    benefitsHeading: "Warum alles lokal bleibt",
+    faqHeading: "Kurze Antworten",
   },
   seo: {
     home: {

@@ -12,7 +12,7 @@ export const pl: Dictionary = {
   home: {
     heroTitle: "PureText — prywatne narzędzia tekstowe w przeglądarce",
     heroIntro:
-      "11 narzędzi do liczenia, czyszczenia, list i diff na text.kixt.net — sześć języków. Tekst zostaje na urządzeniu: bez uploadu i zapisu na serwerze. Ciemny interfejs kixt.net na telefon i desktop.",
+      "Dziewięć narzędzi do liczenia, czyszczenia, list i diff na text.kixt.net — sześć języków. Tekst zostaje na urządzeniu: bez uploadu i zapisu na serwerze. Ciemny interfejs kixt.net na telefon i desktop.",
     categoriesHeading: "Kategorie",
     openCategory: "Otwórz kategorię",
   },
@@ -126,6 +126,11 @@ export const pl: Dictionary = {
     presets: { off: "Wył.", tweet: "280", sms: "160", snippet: "500", post: "1 000", long: "2 000" },
   },
   faq: { heading: "FAQ", items: [{ question: "Czy tekst idzie na serwer?", answer: "Nie — po załadowaniu strony wszystko lokalnie." }, { question: "Czy tekst się zachowuje?", answer: "Tak, do odświeżenia strony." }, { question: "Czy będzie reklama?", answer: "Miejsca pod AdSense są, start bez banerów." }] },
+  seoPage: {
+    usageHeading: "Kiedy używać",
+    benefitsHeading: "Dlaczego przetwarzanie jest lokalne",
+    faqHeading: "Krótkie odpowiedzi",
+  },
   seo: {
     home: {
       title: "PureText — narzędzia tekstowe na text.kixt.net",
